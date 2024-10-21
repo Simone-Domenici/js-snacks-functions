@@ -4,10 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function findFirst(array, letter) {
+    const firstletter = array.filter(name => name[0] === letter);
+    return firstletter;
+  }
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+const result = findFirst(names, 'A')
+console.log(result)
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
